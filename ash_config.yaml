@@ -1,0 +1,5 @@
+name: FileIO
+package: github.com/ash-shell/file-io
+is_callable: true
+callable_prefix: FileIO
+default_alias: fileio

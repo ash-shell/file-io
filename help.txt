@@ -1,0 +1,9 @@
+fileio(1)
+
+NAME
+          fileio - Upload file(s) to https://file.io
+
+SYNOPSIS
+          fileio file             upload single file & copy link to clipboard
+          fileio file1 file2      upload multiple files
+          fileio:history          output history
