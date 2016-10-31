@@ -33,16 +33,16 @@ FileIO__callable_main () {
           exit
         fi
       else
-          Logger__alert "Failed to upload"
-          if [[ $output =~ (\"error\"\:)(.*)(,) ]]; then # next char (,)
-            Logger__alert "Error: ${BASH_REMATCH[2]}"
-          elif [[ $output =~ (\"error\"\:)(.*)(}) ]]; then # next char (})
-              Logger__alert "Error: ${BASH_REMATCH[2]}"
-          fi
-          if [[ $output =~ (\"message\"\:)(\")(.*)\" ]]; then
-            Logger__alert "Message: ${BASH_REMATCH[3]}"
-          fi
-          exit
+        Logger__alert "Failed to upload"
+        if [[ $output =~ (\"error\"\:)(.*)(,) ]]; then # next char (,)
+          Logger__alert "Error: ${BASH_REMATCH[2]}"
+        elif [[ $output =~ (\"error\"\:)(.*)(}) ]]; then # next char (})
+          Logger__alert "Error: ${BASH_REMATCH[2]}"
+        fi
+        if [[ $output =~ (\"message\"\:)(\")(.*)\" ]]; then
+          Logger__alert "Message: ${BASH_REMATCH[3]}"
+        fi
+        exit
       fi
     fi
   done
