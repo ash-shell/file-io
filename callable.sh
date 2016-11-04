@@ -20,7 +20,7 @@
 #
 # NOTES
 #           The expires/e flag is able to be added after or before the files.
-#           Which ever you pattern you choose you must be consitant.
+#           Which ever you pattern you choose you must be consitant with.
 
 FileIO__callable_main () {
   Logger__set_prefix "file.io"
