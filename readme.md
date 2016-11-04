@@ -22,6 +22,19 @@ SYNOPSIS
           fileio file1 file2      upload multiple files
           fileio:history          output history
 
+   FLAGS
+          -e, --expires 'time'  (default: 2 weeks) positive integer followed by
+                                    w (week), m (month) or y (year)
+
+EXAMPLES
+          ash fileio --expires 1w help.txt license.md
+          ash fileio help.txt license.md -e 1w
+          ash fileio --expires 1w help.txt license.md -e 1y readme.md
+
+NOTES
+          The expires/e flag is able to be added after or before the files.
+          Which ever you pattern you choose you must be consitant with.
+
 ```
 
 ## License
